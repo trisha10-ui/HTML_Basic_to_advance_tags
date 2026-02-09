@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+    #one{
+    background-color: cadetblue;
+    color: greenyellow;
+    width: 200px;
+    }
+    .static{
+        background-color: seagreen;
+        color: navy;
+        width: 200px;
+        position:static;
+        left: 100px;
+    }
+    #two{
+        background-color: cadetblue;
+    color: greenyellow;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    opacity: 0.9;
+    /* opacity =0 disspaper range is between 0 and 1 */
+    }
+
+    .relative{
+         background-color: seagreen;
+        color: navy;
+        width: 200px;
+        position:relative;
+        left: 600px;  
+        /* //depends on left size other wise it will overlap */
+        top: -100px;
+        z-index: index 1;
+    }
+    #three{
+        background-color: cadetblue;
+    color: greenyellow;
+    width: 200px;
+    /* position: relative;
+    z-index: 2;
+    opacity: 0.9; */
+    /* opacity =0 disspaper range is between 0 and 1 */
+    }
+
+    .absolute{
+        background-color: seagreen;
+        color: navy;
+        width: 200px;
+        position:absolute;
+        left: 600px;  
+        /* //depends on left size other wise it will overlap */
+        top: -100px;
+        z-index: index 1;
+    }
+    #four{
+           background-color: cadetblue;
+    color: greenyellow;
+    width: 200px;
+    }
+    /* fixed tag is used when we want some bar fixed at the top as example blocks nav bar   */
+    .fixed{
+         background-color: yellow;
+        color: navy;
+        width: 200px;
+        position:fixed;
+        bottom: 500px;
+        /* left: 600px;  
+        /* //depends on left size other wise it will overlap */
+        /* top: -100px;
+        z-index: index 1; */ 
+    }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <h2>Position: Static</h2>
+        <p>An element with position: static. is not positioned in any special way, it is always positioned according to the normal flow of the page:</p>
+    </div>
+
+    <div class="static">
+        this div has static position property value
+    </div>
+
+    <div id="two">
+        <h2>Position: Relative</h2>
+        <p>An element with position: static. is not positioned in any special way, it is always positioned according to the normal flow of the page:</p>
+    </div>
+
+    <div class="relative">
+        this div has static position property value
+    </div>
+
+     <div id="three">
+        <h2>Position: Absolute</h2>
+        <p>An element with position: static. is not positioned in any special way, it is always positioned according to the normal flow of the page:</p>
+    </div>
+
+    <div class="relative">
+        <p class="absolute"> this div has absolute position property value</p>
+    </div>
+
+    <div id="four">
+        <h2>Position: fixed: </h2>
+        <p>An element with position: fixed. is not positioned in any special way, it is always positioned according to the normal flow of the page:</p>
+    </div>
+
+     <div class="fixed">
+        this div has static position property value
+    </div>
+
+</body>
+</html>

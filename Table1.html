@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+
+    <style>
+        .main-head{
+            background-color: crimson;
+            color: white;
+            font-size: 30px;
+            text-align: 30px;
+            max-width: 500px;
+            margin: 20px auto 0 auto;
+            padding: 30px;
+        }
+        .table-list{
+            border-collapse: collapse;
+            margin: 20px auto 0 auto;
+            font-size: 0.9em;
+            width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            padding: 30px;
+            box-shadow:0 0 50px rgba(12, 0, 0, 0.15);
+        }
+        .table-list thead tr {
+            background-color: seagreen;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+        .table-list th, 
+        .table-list td{
+            padding: 12px 15px;
+        }
+        .table-list tbody tr{
+            border-bottom: 1px solid lightslategray;
+        }
+        
+        /* give section dive after each row  */
+        .table-list tr:nth-of-type(even){
+            background-color: lightgrey;
+        }
+        /* give background color at all even numbers */
+        .table-list tr:last-of-type{
+            border-bottom: 7px solid seagreen;
+        }
+
+        .table-list tr.active-row {
+            color: blueviolet;
+            font-weight: bold;
+        }
+        tr{
+            cursor: pointer;
+        }
+        tr:hover{
+            background-color: lightgray;
+
+        }
+        /* each row should change background color */
+    </style>
+</head>
+<body>
+    <h2 class="main-head">CSS Properties for Tables: </h2>
+    <table class="table-list">
+        <thead>
+            <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Marks</th>
+        </tr>
+        </thead>
+
+        <tr>
+            <td>01</td>
+            <td>Trisha</td>
+            <td>A5</td>
+            <td>98</td>
+        </tr>
+
+        <tr class="active-row">
+        <td>02</td>
+        <td>Anil</td>
+        <td>A1</td>
+        <td>100</td>
+        </tr>
+           
+
+        <tr>
+            <td>03</td>
+            <td>haldiram</td>
+            <td>A6</td>
+            <td>84</td>
+        </tr>
+
+        <tr>
+            <td>04</td>
+            <td>Mazzza</td>
+            <td>A9</td>
+            <td>56</td>
+        </tr>
+
+        <tr class="active-row">
+            <td>05</td>
+            <td>Penssss</td>
+            <td>A0</td>
+            <td>65</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Fonts and text</title>
+        <meta name = "viewport" content="width = device-width initial-scale=1.0">
+    </head>
+         <link rel="preconnect" href="https://fpnts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family-Pirata+One&display=swap"
+         rel="stylesheet">
+    <style>
+        body{
+            color:yellowgreen;
+            background-color: gray;
+        }
+        .p1{
+            font-family: "times new roman", times, serif;
+            font-style: normal;
+            font-weight: bold;
+            color: red;
+            background-color: green;
+            text-align: left;
+            text-transform: capitalize;
+            text-indent:40px;
+            line-height:  25px ;
+            word-spacing: 2px;
+        }
+        /* it give space in letter of links  */
+        a{
+            letter-spacing: 4cap;
+            text-shadow: 2px 2px 2px black ;
+            /* it create shadow down in black color and 1st 2px is hgt 2px is width and 2px is blur*/
+
+        }
+        .p2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration: dashed;
+        }
+        .p3{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .h1{
+            font-size: 40px;
+            text-decoration: dashed;
+        }
+        .h2{
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+        .h3{
+            font-size: 10px;
+        }
+        /* when we touch the link it turns into yellow color */
+        a:hover{   
+ text-decoration: underline;
+            color:yellow;
+        }
+        .italic{
+                      font-style: italic;
+        }
+
+        .bold{
+                      font-weight: bold; 
+        }
+    </style>
+    
+    <body>
+        <p class="p0"><a href="">This is link with default Underline</a></p>
+        <p class="p1">
+            <span class="italic"> can Have Whatever the things you have such pressure<br></span>
+           <span class="bold">This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only </span>
+
+        </p>
+
+        <p class="p2">You can Have Whatever the things you have such pressure<br>
+            This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only 
+
+        </p>
+
+        <p class="p3">You can Have Whatever the things you have such pressure<br>
+            This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only 
+
+        </p>
+        <h1> This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only</h1>
+
+            <h2> This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only</h2>
+
+            <h3> This is because we guys plays a imp role in our life<br>
+            the whole things stand for us only</h3>
+        </body>
+
+</html>

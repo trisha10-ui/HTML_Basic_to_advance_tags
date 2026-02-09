@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector</title>
+    </head>
+
+    <!-- CSS Style will be before the body tag -->
+    <!-- The element Selector -->
+    <style>
+         p{
+        text-align: center;
+        color:green;
+     }
+        /* The id selector */
+        #para1{
+            text-align: center;
+            color:rgb(4, 98, 98);
+        }
+          /* The class selector */
+        .center{
+            text-align: center;
+            color:blue;
+        }
+
+        /* the class selector for specific elements only! */
+        p.center{
+            text-align: left;
+            color: peru;
+        }
+
+        /* An HTML Element that refer to the two classes */
+      p.center{
+        text-align: center;
+        color: orange;
+      }
+
+      p.large{
+        font-size: 300px;
+      }
+
+      /* universal selector */
+
+      *{
+        text-align: center;
+        color: orange;
+      }
+      /* grouping selector */
+      h1,h2,p{
+        /* font-size: 100%; */
+        color: purple;
+        text-align: center;
+      }
+    </style>
+    
+    
+    <body>
+        <!-- <p>I am so intrested in Coding Creativity and more pursuing knowdlege this is so Enchane and Creative 
+            like i ever Wonder to Explore this Felid and i want to do ai ml specilization for that i have to bring 9.5++ cgpa and sgpa 
+         </p>
+        <p>I have a skills of Graphic Design and so much love towards tech</p> -->
+
+        <!-- For id selector -->
+         
+        <!-- <p id="para1">This will change the style of this paragraph only</p>
+        <h3>So Basically im Trisha Anil Thepale</h3>
+         <p>I am so intrested in Coding Creativity and more pursuing knowdlege this is so Enchane and Creative 
+            like i ever Wonder to Explore this Felid and i want to do ai ml specilization for that i have to bring 9.5++ cgpa and sgpa 
+         </p>
+         <p>I have a skills of Graphic Design and so much love towards tech</p> -->
+
+
+           <!-- the class selctor for specific elements only -->
+         <!-- <p class="center">This will change the style of this paragraph only</p>
+        <h3>So Basically im Trisha Anil Thepale</h3>
+         <p class="center">I am so intrested in Coding Creativity and more pursuing knowdlege this is so Enchane and Creative 
+            like i ever Wonder to Explore this Felid and i want to do ai ml specilization for that i have to bring 9.5++ cgpa and sgpa 
+         </p>
+         <p>I have a skills of Graphic Design and so much love towards tech</p> -->
+
+         <!-- An HTML element that refer to the two classes -->
+         <!-- <h1 class="center">This heading will not affected</h1>  
+
+         <p class="center">This will change the style of this paragraph only</p>
+        <h3>So Basically im Trisha Anil Thepale</h3>
+         <p class="center large">I am so intrested in Coding Creativity and more pursuing knowdlege this is so Enchane and Creative 
+            like i ever Wonder to Explore this Felid and i want to do ai ml specilization for that i have to bring 9.5++ cgpa and sgpa 
+         </p>
+         <p>I have a skills of Graphic Design and so much love towards tech</p> -->
+
+         <!-- universal tag -->
+
+          <!-- <h1 class="center">This heading will not affected</h1>  
+
+         <p class="center">This will change the style of this paragraph only</p>
+        <h3>So Basically im Trisha Anil Thepale</h3>
+         <p class="center large">I am so intrested in Coding Creativity and more pursuing knowdlege this is so Enchane and Creative 
+            like i ever Wonder to Explore this Felid and i want to do ai ml specilization for that i have to bring 9.5++ cgpa and sgpa 
+         </p>
+         <p>I have a skills of Graphic Design and so much love towards tech</p> -->
+
+
+          <!-- Universal selector  -->
+          <p>Hello World!!!</p>
+          <h2>Smaller Heading!</h2>
+          <p id="para1">me too**</p>
+          <p>This is a paragraph.</p>
+
+
+         <!-- Grouping selector  -->
+          <h1>Hello World!!!</h1>
+          <h2>Smaller Heading!</h2>
+          <p>This is a paragraph.</p>
+
+    </body>
+</html>
